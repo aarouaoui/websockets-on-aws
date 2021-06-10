@@ -1,7 +1,7 @@
 const AWS = require('aws-sdk')
 
 const api = new AWS.ApiGatewayManagementApi({
-  endpoint: '<Enter your API Endpoint here>'
+  endpoint: 'wss://m1l7vq7ida.execute-api.us-east-2.amazonaws.com/production'
 })
 
 const options = ['Yes', 'No', 'Maybe', 'Probably', 'Probably Not']
