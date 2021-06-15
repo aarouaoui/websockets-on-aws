@@ -12,8 +12,7 @@ socket.addEventListener('close', e => console.log('WebSocket is closed'))
 socket.addEventListener('error', e => console.error('WebSocket is in error', e))
 
 socket.addEventListener('message', e => {
-  // console.log('WebSocket received a message:', e)
-  console.log('Your answer is:', JSON.parse(e.data).message)
+  console.log('WebSocket received a message:', e)
 })
 
 window.ask = function (msg) {
